@@ -1,0 +1,121 @@
+/* 관리자 로그인 폼 전용 스타일 */
+
+/* 로그인 폼 스타일 개선 */
+body.login-body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 10px;
+}
+
+.login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 90%;
+    min-width: 320px;
+    box-sizing: border-box;
+    margin: 50px auto 0 auto;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 18px;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.login-form input[type="password"]:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: opacity 0.3s;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.login-form button:hover {
+    opacity: 0.9;
+}
+
+.login-form .error {
+    color: #dc3545;
+    margin: 15px 0;
+    padding: 12px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+    body.login-body {
+        padding: 15px;
+    }
+    
+    .login-form {
+        max-width: none;
+        width: 100%;
+        min-width: auto;
+        padding: 30px 25px;
+        margin: 30px auto 0 auto;
+    }
+    
+    .login-form h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .login-form input[type="password"] {
+        padding: 16px;
+        font-size: 16px;
+        margin: 12px 0;
+    }
+    
+    .login-form button {
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body.login-body {
+        padding: 10px;
+    }
+    
+    .login-form {
+        padding: 25px 20px;
+        margin: 20px auto 0 auto;
+    }
+    
+    .login-form h2 {
+        font-size: 22px;
+    }
+}

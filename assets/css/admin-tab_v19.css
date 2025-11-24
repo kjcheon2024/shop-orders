@@ -1,0 +1,691 @@
+/* admin_tab.css - 새로운 탭 전용 스타일 (Tailwind 스타일) */
+
+/* 카테고리, 품목, 할당 탭 전용 폼 스타일 */
+.add-form,
+.assignment-form {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.add-form h3,
+.assignment-form h3 {
+    margin: 0 0 20px 0;
+    color: #111827;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+/* 검색 결과 및 선택된 업체 스타일 */
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.search-result-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #f3f4f6;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.search-result-item:hover {
+    background: #f9fafb;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item .company-name {
+    font-weight: 500;
+    color: #111827;
+}
+
+.search-result-item .company-details {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+.selected-company-info {
+    padding: 12px 16px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.selected-company-info .no-selection {
+    color: #9ca3af;
+    font-style: italic;
+}
+
+.selected-company-info .company-selected {
+    color: #111827;
+    font-weight: 500;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+    transition: all 0.15s ease-in-out;
+    outline: none;
+    color: #111827;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.input-group input::placeholder {
+    color: #9ca3af;
+}
+
+.input-group.small {
+    flex: 0 0 80px;
+    min-width: 80px;
+}
+
+.input-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-right: 32px;
+}
+
+/* 새로운 탭 전용 버튼 스타일 */
+#categories-tab .btn.btn-approve,
+#items-tab .btn.btn-approve,
+#assignments-tab .btn.btn-approve {
+    background: #3b82f6;
+    color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+    outline: none;
+}
+
+#categories-tab .btn.btn-approve:hover,
+#items-tab .btn.btn-approve:hover,
+#assignments-tab .btn.btn-approve:hover {
+    background: #2563eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+#categories-tab .btn.btn-approve:active,
+#items-tab .btn.btn-approve:active,
+#assignments-tab .btn.btn-approve:active {
+    background: #1d4ed8;
+    transform: translateY(1px);
+}
+
+/* 카테고리/품목 목록 스타일 */
+.category-list,
+.items-by-category,
+.company-assignments {
+    margin-top: 20px;
+}
+
+.category-item,
+.item-row,
+.assignment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background: white;
+    transition: all 0.15s ease-in-out;
+}
+
+.category-item:hover,
+.item-row:hover,
+.assignment-row:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
+}
+
+.category-name,
+.item-name {
+    font-weight: 500;
+    color: #111827;
+    flex: 1;
+}
+
+.item-order {
+    font-weight: 600;
+    color: #6b7280;
+    min-width: 30px;
+    text-align: center;
+    margin-right: 15px;
+    background: #f3f4f6;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.category-actions,
+.item-actions,
+.assignment-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-edit {
+    background: #f59e0b;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #d97706;
+}
+
+.btn-reject {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-reject:hover {
+    background: #dc2626;
+}
+
+/* 드래그 핸들 스타일 */
+.drag-handle {
+    cursor: grab;
+    color: #9ca3af;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: all 0.15s ease-in-out;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+}
+
+.drag-handle:hover {
+    color: #6b7280;
+    background: #f3f4f6;
+}
+
+.drag-handle:active {
+    cursor: grabbing;
+}
+
+/* 드래그 중인 요소 스타일 */
+.item-row[draggable="true"]:hover {
+    background: #f9fafb;
+}
+
+.item-row.dragging {
+    opacity: 0.5;
+    transform: rotate(2deg);
+}
+
+/* 자동 재정렬 버튼 스타일 */
+.reorder-btn {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: all 0.15s ease-in-out;
+}
+
+.reorder-btn:hover {
+    background: #059669;
+}
+
+.category-section {
+    margin-bottom: 32px;
+}
+
+.category-section h3 {
+    color: #1f2937;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 8px;
+}
+
+.item-hint {
+    margin: 8px 0 16px 0;
+    padding: 10px 12px;
+    background: #f9fafb;
+    border: 1px dashed #e5e7eb;
+    border-radius: 8px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.item-list {
+    margin-left: 0;
+}
+
+.item-description,
+.category-description {
+    font-size: 13px;
+    color: #6b7280;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+/* 카테고리 드래그 앤 드롭 스타일 */
+.category-item[draggable="true"]:hover {
+    background: #f9fafb;
+}
+
+.category-item.dragging {
+    opacity: 0.5;
+    transform: rotate(2deg);
+}
+
+.category-list {
+    margin-left: 0;
+}
+
+/* 모달 스타일 (새로운 탭용) */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.modal-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #111827;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.close {
+    color: #9ca3af;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+}
+
+.close:hover {
+    color: #374151;
+}
+
+.modal-body {
+    padding: 20px 24px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    background: #f9fafb;
+}
+
+/* 할당된 품목 리스트 스타일 개선 */
+.assignment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background: white;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+}
+
+.assignment-row:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
+}
+
+.assignment-content {
+    flex: 1;
+    padding-right: 80px; /* 우측 액션 영역 공간 확보 */
+}
+
+.assignment-content .item-name {
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.assignment-content .item-description {
+    font-size: 13px;
+    color: #6b7280;
+    font-style: italic;
+}
+
+.assignment-actions {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.assignment-actions .item-order {
+    font-weight: 600;
+    color: #6b7280;
+    background: #f3f4f6;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    min-width: 24px;
+    text-align: center;
+}
+
+.btn-delete {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    font-weight: 600;
+}
+
+.btn-delete:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+}
+
+.delete-icon {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+/* 모바일에서 할당된 품목 리스트 스타일 */
+@media (max-width: 768px) {
+    .assignment-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px;
+        position: relative;
+    }
+    
+    .assignment-content {
+        padding-right: 80px; /* 우측 액션 영역 공간 확보 */
+        width: 100%;
+    }
+    
+    .assignment-actions {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .assignment-actions .item-order {
+        margin-right: 0;
+    }
+}
+
+.company-info {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.company-info h4 {
+    margin: 0 0 12px 0;
+    color: #1e40af;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.company-info .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.company-info .info-item {
+    font-size: 14px;
+}
+
+.company-info .info-label {
+    font-weight: 500;
+    color: #374151;
+}
+
+.company-info .info-value {
+    color: #6b7280;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    /* 탭 레이아웃 - 한 줄에 두 개씩 배치 (최고 구체성 선택자 사용) */
+    html body .tabs {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+        margin-bottom: 20px;
+        flex-wrap: nowrap !important;
+        flex-direction: unset !important;
+    }
+    
+    body .tab-btn {
+        padding: 12px 8px;
+        font-size: 12px;
+        text-align: center;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    /* 주문확인 섹션과 만료공지 일괄처리 섹션은 제외하고 다른 섹션들만 세로 배치 */
+    .add-form:not(.notice-expiry-section) .form-row,
+    .assignment-form .form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .form-row .input-group {
+        width: 100%;
+        min-width: auto;
+        margin-bottom: 12px;
+    }
+    
+    /* 주문확인 섹션과 만료공지 일괄처리 섹션은 가로 배치 유지 */
+    .order-date-selector .form-row,
+    .notice-expiry-section .form-row {
+        flex-direction: row;
+        align-items: end;
+    }
+    
+    .order-date-selector .input-group,
+    .notice-expiry-section .input-group {
+        width: auto;
+        margin-bottom: 0;
+    }
+    
+    .category-item,
+    .item-row,
+    .assignment-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    /* 기본: 다른 탭은 기존 정렬 유지 (우측 정렬) */
+    .category-actions,
+    .assignment-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    /* 카테고리 탭에서만 버튼 좌측 정렬 */
+    #categories-tab .category-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    /* 카테고리 리스트: 순서를 카테고리명과 같은 라인의 우측 상단에 배치 */
+    .category-item {
+        position: relative;
+    }
+    
+    .category-item .category-name {
+        padding-right: 56px; /* 우측 상단 순서 배지 공간 확보 */
+    }
+    
+    .category-item .item-order {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        margin-right: 0;
+    }
+
+    /* 품목 탭에서만 버튼 좌측 정렬 */
+    #items-tab .item-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    /* 품목 리스트: 순서를 품목명과 같은 라인의 우측 상단에 배치 */
+    .item-row {
+        position: relative;
+    }
+    
+    .item-row .item-name {
+        padding-right: 56px; /* 우측 상단 순서 배지 공간 확보 */
+    }
+    
+    .item-row .item-order {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        margin-right: 0;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 2% auto;
+    }
+    
+    .company-info .info-grid {
+        grid-template-columns: 1fr;
+    }
+}

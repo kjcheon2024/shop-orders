@@ -1,0 +1,71 @@
+/* 주소검색 관련 스타일 */
+.address-search-row {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+.address-search-row .form-group {
+    margin-bottom: 0;
+}
+
+.zipcode-group {
+    flex: 1;
+}
+
+.search-btn-group {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.address-search-btn {
+    padding: 18px 20px;
+    background: #DBDBDB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    height: 60px;
+    min-width: 120px;
+}
+
+.address-search-btn:hover {
+    opacity: 0.9;
+}
+
+.address-search-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+/* 주소검색 행은 모바일에서도 가로로 유지 */
+    .address-search-row {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .address-search-row .form-group {
+        margin-bottom: 0;
+    }
+    
+    .address-search-btn {
+        min-width: 80px;
+        font-size: 14px;
+        padding: 18px 12px;
+        height: 60px;
+    }
+
+    .tab-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}

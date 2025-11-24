@@ -1,0 +1,239 @@
+/* 품목관리 화면 스타일 */
+
+.assigned-items-section,
+.all-items-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.assigned-items-section h4,
+.all-items-section h4 {
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #007bff;
+    font-size: 14px;
+}
+
+.item-filter {
+    margin-bottom: 15px;
+}
+
+.item-filter select {
+    width: 200px;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.item-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.item-card.assigned {
+    border-left: 4px solid #28a745;
+}
+
+.item-card.unassigned {
+    border-left: 4px solid #6c757d;
+}
+
+.item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.item-info h5 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.item-description {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.item-actions {
+    flex-shrink: 0;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.category-header {
+    grid-column: 1 / -1;
+    background: #f8f9fa;
+    padding: 10px 15px;
+    margin: 10px 0 5px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #495057;
+    border-left: 4px solid #007bff;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 0;
+}
+
+.status-none {
+    display: none;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.status-approved {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-rejected {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.request-status {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.request-status h4 {
+    margin: 0 0 15px 0;
+    color: #495057;
+    font-size: 16px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.message.info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* Small text within messages */
+.message small {
+    font-size: 0.875em;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+.no-data {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.loading-message {
+    text-align: center;
+    color: #007bff;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .item-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .item-card {
+        padding: 12px;
+        /* 데스크톱과 동일한 flex 레이아웃 유지 */
+    }
+    
+    .item-info h5 {
+        font-size: 15px;
+        gap: 5px;
+    }
+    
+    .item-description {
+        font-size: 13px;
+    }
+    
+    .item-actions {
+        margin-left: 10px;
+    }
+    
+    .status-badge {
+        font-size: 9px;
+        padding: 1px 4px;
+    }
+    
+    .btn-small {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+    
+    .item-filter select {
+        width: 100%;
+    }
+}

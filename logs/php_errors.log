@@ -1,0 +1,181 @@
+[27-Oct-2025 05:10:27 Asia/Seoul] 주문 이력 조회: 순천연향점, 기간: 2025-10-20 05:10:27 ~ 2025-10-27 05:10:27
+[27-Oct-2025 05:10:27 Asia/Seoul] 조회된 주문 날짜 수: 0
+[27-Oct-2025 05:10:27 Asia/Seoul] 최종 이력 일수: 0
+[27-Oct-2025 05:10:55 Asia/Seoul] 주문 이력 조회: 전주중화산점, 기간: 2025-10-20 05:10:55 ~ 2025-10-27 05:10:55
+[27-Oct-2025 05:10:55 Asia/Seoul] 조회된 주문 날짜 수: 1
+[27-Oct-2025 05:10:55 Asia/Seoul] 최종 이력 일수: 1
+[27-Oct-2025 05:11:43 Asia/Seoul] 주문 이력 조회: 전주중화산점, 기간: 2025-10-20 05:11:43 ~ 2025-10-27 05:11:43
+[27-Oct-2025 05:11:43 Asia/Seoul] 조회된 주문 날짜 수: 1
+[27-Oct-2025 05:11:43 Asia/Seoul] 최종 이력 일수: 1
+[29-Oct-2025 00:00:38 Asia/Seoul] 주문 이력 조회: 전주중화산점, 기간: 2025-10-22 00:00:38 ~ 2025-10-29 00:00:38
+[29-Oct-2025 00:00:38 Asia/Seoul] 조회된 주문 날짜 수: 1
+[29-Oct-2025 00:00:38 Asia/Seoul] 최종 이력 일수: 1
+[29-Oct-2025 00:01:05 Asia/Seoul] Google Sheets 연동 시작
+[29-Oct-2025 00:01:05 Asia/Seoul] google-sheets.php 로드 성공
+[29-Oct-2025 00:01:05 Asia/Seoul] updateGoogleSheets 함수 존재함
+[29-Oct-2025 00:01:05 Asia/Seoul] === 주문 처리 시작 ===
+[29-Oct-2025 00:01:05 Asia/Seoul] 업체명: 전주중화산점
+[29-Oct-2025 00:01:05 Asia/Seoul] 주문 개수: 2
+[29-Oct-2025 00:01:05 Asia/Seoul] 주문 데이터: [{"item":"\ud6c4\ud0d5(5k)","quantity":5},{"item":"\ubaa9\uc720\uc2ac(3k)","quantity":4}]
+[29-Oct-2025 00:01:05 Asia/Seoul] 업체 검색 시작...
+[29-Oct-2025 00:01:05 Asia/Seoul] 업체 '전주중화산점' 검색 시작 - 검색할 시트들: ["\ubc30\uc1a11","\ubc30\uc1a12","\ubc30\uc1a13","\uc6d4\uc218\uae08","\ud654\ubaa9\ud1a0"]
+[29-Oct-2025 00:01:05 Asia/Seoul] 시트 '배송1'에서 업체 '전주중화산점' 검색 중...
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '배송1'에서 25행 발견
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 2: '루키차이나' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 21: '합계' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 24: '메모' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '배송1'에서 업체 '전주중화산점'를 찾지 못함
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '배송2'에서 업체 '전주중화산점' 검색 중...
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '배송2'에서 25행 발견
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 2: '신규업체둘' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 3: '신규업체셋' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 21: '합계' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 24: '메모' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '배송2'에서 업체 '전주중화산점'를 찾지 못함
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '배송3'에서 업체 '전주중화산점' 검색 중...
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '배송3'에서 25행 발견
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 2: '새로운업체' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 21: '합계' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 24: '메모' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '배송3'에서 업체 '전주중화산점'를 찾지 못함
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '월수금'에서 업체 '전주중화산점' 검색 중...
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '월수금'에서 26행 발견
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 2: '순천대점' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 3: '순천연향점' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 4: '순천신대점' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 5: '여수소호점' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 6: '여수여서점' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 7: '광양중마점' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 11: '합계' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 13: '기타업체' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 14: '담양수타' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 15: '순천미옌' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 16: '곡성만리장성' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 17: '광양청해루' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 18: '광양은자반점' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 19: '오산뚜꺼비' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 20: '창평반점' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 23: '합계' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 행 25: '메모' vs '전주중화산점'
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '월수금'에서 업체 '전주중화산점'를 찾지 못함
+[29-Oct-2025 00:01:07 Asia/Seoul] 시트 '화목토'에서 업체 '전주중화산점' 검색 중...
+[29-Oct-2025 00:01:08 Asia/Seoul] 시트 '화목토'에서 26행 발견
+[29-Oct-2025 00:01:08 Asia/Seoul] 행 2: '정읍수성점' vs '전주중화산점'
+[29-Oct-2025 00:01:08 Asia/Seoul] 행 3: '신태인점' vs '전주중화산점'
+[29-Oct-2025 00:01:08 Asia/Seoul] 행 4: '전북대점' vs '전주중화산점'
+[29-Oct-2025 00:01:08 Asia/Seoul] 행 5: '전주아중점' vs '전주중화산점'
+[29-Oct-2025 00:01:08 Asia/Seoul] 행 6: '전주중화산점' vs '전주중화산점'
+[29-Oct-2025 00:01:08 Asia/Seoul] 업체 '전주중화산점' 발견! 시트: 화목토, 행: 7
+[29-Oct-2025 00:01:08 Asia/Seoul] 업체 발견: {"sheetName":"\ud654\ubaa9\ud1a0","row":7,"foundAt":6,"itemGroup":{"groupName":"\ub3c4\uc57c\uc9ec\ubf55","headerRow":2}}
+[29-Oct-2025 00:01:08 Asia/Seoul] 두 줄 헤더 감지 및 처리: ["\ub3c4\uc57c\uc9ec\ubf55\uc815\uc74d\uc218\uc131\uc810","\ud6c4\ud0d5(5k)","\ub4f1\ud0d5(5k)","\uc720\uc2ac(5k)","\uc9dc\uc7a5(3k)","\ubaa9\uc720\uc2ac(3k)","\uc6b0\uc0bc\uacb9(3k)","\ub2ed\uc815\uc721(2k)","\uc720\uc2ac(3k)","","\uc911\uba74","","\uc9dc\uc7a5\n\uc18c\uc2a4","","\uc9ec\ubf55\n\uc2dc\uc988\ub2dd","","\uc720\uc790\n\uc18c\uc2a4","","\uc61b\ub0a0\n\uc18c\uc2a4","","\ud640\n\ub2e8\ubb34\uc9c0","","\ubc30\ub2ec\n\ub2e8\ubb34\uc9c0"]
+[29-Oct-2025 00:01:09 Asia/Seoul] 주문 업데이트 시작 - 업체: 7행, 그룹: 도야짬뽕
+[29-Oct-2025 00:01:09 Asia/Seoul] 사용 헤더: ["\ub3c4\uc57c\uc9ec\ubf55\uc815\uc74d\uc218\uc131\uc810","\ud6c4\ud0d5(5k)","\ub4f1\ud0d5(5k)","\uc720\uc2ac(5k)","\uc9dc\uc7a5(3k)","\ubaa9\uc720\uc2ac(3k)","\uc6b0\uc0bc\uacb9(3k)","\ub2ed\uc815\uc721(2k)","\uc720\uc2ac(3k)","","\uc911\uba74","","\uc9dc\uc7a5\n\uc18c\uc2a4","","\uc9ec\ubf55\n\uc2dc\uc988\ub2dd","","\uc720\uc790\n\uc18c\uc2a4","","\uc61b\ub0a0\n\uc18c\uc2a4","","\ud640\n\ub2e8\ubb34\uc9c0","","\ubc30\ub2ec\n\ub2e8\ubb34\uc9c0"]
+[29-Oct-2025 00:01:09 Asia/Seoul] 주문 데이터: [{"item":"\ud6c4\ud0d5(5k)","quantity":5},{"item":"\ubaa9\uc720\uc2ac(3k)","quantity":4}]
+[29-Oct-2025 00:01:09 Asia/Seoul] 품목 '후탕(5k)' 매칭 시도... (수량: 5)
+[29-Oct-2025 00:01:09 Asia/Seoul] 헤더 비교: '후탕(5k)' vs '도야짬뽕정읍수성점' (인덱스: 0)
+[29-Oct-2025 00:01:09 Asia/Seoul] 헤더 비교: '후탕(5k)' vs '후탕(5k)' (인덱스: 1)
+[29-Oct-2025 00:01:09 Asia/Seoul] 품목 '후탕(5k)' 정확 매칭 성공! 열 인덱스: 1
+[29-Oct-2025 00:01:09 Asia/Seoul] 셀 업데이트: 화목토!B7 = 5
+[29-Oct-2025 00:01:09 Asia/Seoul] 품목 '목유슬(3k)' 매칭 시도... (수량: 4)
+[29-Oct-2025 00:01:09 Asia/Seoul] 헤더 비교: '목유슬(3k)' vs '도야짬뽕정읍수성점' (인덱스: 0)
+[29-Oct-2025 00:01:09 Asia/Seoul] 헤더 비교: '목유슬(3k)' vs '후탕(5k)' (인덱스: 1)
+[29-Oct-2025 00:01:09 Asia/Seoul] 헤더 비교: '목유슬(3k)' vs '등탕(5k)' (인덱스: 2)
+[29-Oct-2025 00:01:09 Asia/Seoul] 헤더 비교: '목유슬(3k)' vs '유슬(5k)' (인덱스: 3)
+[29-Oct-2025 00:01:09 Asia/Seoul] 헤더 비교: '목유슬(3k)' vs '짜장(3k)' (인덱스: 4)
+[29-Oct-2025 00:01:09 Asia/Seoul] 헤더 비교: '목유슬(3k)' vs '목유슬(3k)' (인덱스: 5)
+[29-Oct-2025 00:01:09 Asia/Seoul] 품목 '목유슬(3k)' 정확 매칭 성공! 열 인덱스: 5
+[29-Oct-2025 00:01:09 Asia/Seoul] 셀 업데이트: 화목토!F7 = 4
+[29-Oct-2025 00:01:09 Asia/Seoul] 배치 업데이트 완료: 2개 품목
+[29-Oct-2025 00:01:11 Asia/Seoul] 주문 로그 시트에 2개 항목 기록 완료
+[29-Oct-2025 00:01:11 Asia/Seoul] Google Sheets 결과: {"success":true,"message":"Google Sheets \uc5c5\ub370\uc774\ud2b8 \uc644\ub8cc (\ud654\ubaa9\ud1a0, \ub3c4\uc57c\uc9ec\ubf55 \uadf8\ub8f9, 2\uac1c \ud488\ubaa9)"}
+[29-Oct-2025 00:01:59 Asia/Seoul] 주문 이력 조회: 전주중화산점, 기간: 2025-10-22 00:01:59 ~ 2025-10-29 00:01:59
+[29-Oct-2025 00:01:59 Asia/Seoul] 조회된 주문 날짜 수: 2
+[29-Oct-2025 00:01:59 Asia/Seoul] 최종 이력 일수: 2
+[29-Oct-2025 00:05:10 Asia/Seoul] 주문 이력 조회: 전주중화산점, 기간: 2025-10-22 00:05:10 ~ 2025-10-29 00:05:10
+[29-Oct-2025 00:05:10 Asia/Seoul] 조회된 주문 날짜 수: 2
+[29-Oct-2025 00:05:10 Asia/Seoul] 최종 이력 일수: 2
+[29-Oct-2025 00:09:33 Asia/Seoul] 주문 이력 조회: 전주중화산점, 기간: 2025-10-22 00:09:33 ~ 2025-10-29 00:09:33
+[29-Oct-2025 00:09:33 Asia/Seoul] 조회된 주문 날짜 수: 2
+[29-Oct-2025 00:09:33 Asia/Seoul] 최종 이력 일수: 2
+[29-Oct-2025 00:15:04 Asia/Seoul] 주문 이력 조회: 전주중화산점, 기간: 2025-10-22 00:15:04 ~ 2025-10-29 00:15:04
+[29-Oct-2025 00:15:04 Asia/Seoul] 조회된 주문 날짜 수: 2
+[29-Oct-2025 00:15:04 Asia/Seoul] 최종 이력 일수: 2
+[29-Oct-2025 00:25:52 Asia/Seoul] 주문 이력 조회: 전주중화산점, 기간: 2025-10-22 00:25:52 ~ 2025-10-29 00:25:52
+[29-Oct-2025 00:25:52 Asia/Seoul] 조회된 주문 날짜 수: 2
+[29-Oct-2025 00:25:52 Asia/Seoul] 최종 이력 일수: 2
+[29-Oct-2025 00:38:14 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[29-Oct-2025 00:38:14 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[29-Oct-2025 00:47:37 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[29-Oct-2025 00:47:37 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[29-Oct-2025 00:50:42 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[29-Oct-2025 00:50:42 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[29-Oct-2025 00:53:57 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[29-Oct-2025 00:53:57 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[29-Oct-2025 00:56:27 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[29-Oct-2025 00:56:27 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[19-Nov-2025 12:44:47 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[19-Nov-2025 12:44:47 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[19-Nov-2025 12:44:47 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:01 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[19-Nov-2025 12:45:01 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[19-Nov-2025 12:45:01 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:24 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:24 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:26 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:26 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:31 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:31 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:34 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:34 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:35 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:45:38 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1044] Access denied for user 'u102965352_chfood'@'localhost' to database 'u102965352_chfoodg'
+[19-Nov-2025 12:46:19 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[19-Nov-2025 12:46:19 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[19-Nov-2025 12:46:19 Asia/Seoul] 등록신청 조회오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.registration_requests' doesn't exist
+[19-Nov-2025 12:46:19 Asia/Seoul] 등록신청 조회오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.registration_requests' doesn't exist
+[19-Nov-2025 12:46:19 Asia/Seoul] 등록신청 조회오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.registration_requests' doesn't exist
+[19-Nov-2025 12:46:19 Asia/Seoul] Get pending item request count error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.company_item_requests' doesn't exist
+[19-Nov-2025 12:46:20 Asia/Seoul] Get sheet configs error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.sheet_configs' doesn't exist
+[19-Nov-2025 12:46:20 Asia/Seoul] Get all company item requests error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.company_item_requests' doesn't exist
+[19-Nov-2025 12:46:20 Asia/Seoul] Get item groups error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.item_groups' doesn't exist
+[19-Nov-2025 12:46:37 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:38 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:39 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:43 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:43 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:44 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:44 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:44 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:51 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:52 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:53 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:46:53 Asia/Seoul] 업체 찾기 오류: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:47:03 Asia/Seoul] Get all companies with status error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u102965352_chfood.companies' doesn't exist
+[19-Nov-2025 12:50:24 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 12:50:25 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 12:50:26 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 12:50:38 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 12:50:38 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 12:50:39 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 12:50:39 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 12:50:40 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 12:50:40 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 12:50:46 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[19-Nov-2025 12:50:46 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[19-Nov-2025 12:50:46 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 12:53:08 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[19-Nov-2025 12:53:08 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[19-Nov-2025 12:53:08 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:15 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:15 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:16 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:16 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:16 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:20 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:21 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:22 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:22 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:30 Asia/Seoul] Admin login successful from IP: 125.183.16.181
+[19-Nov-2025 13:04:30 Asia/Seoul] WARNING: Admin logged in with fallback password. Please update hash in config.php
+[19-Nov-2025 13:04:30 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
+[19-Nov-2025 13:04:42 Asia/Seoul] Database connection failed: SQLSTATE[HY000] [1045] Access denied for user 'u102965352_shoporders'@'localhost' (using password: YES)
